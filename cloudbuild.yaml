@@ -19,7 +19,7 @@ steps:
       - '--cpu=1'
       - '--memory=2048Mi'
       - '--allow-unauthenticated'
-      - '--set-secrets=TOKEN=token:latest'
+      - '--set-secrets=TOKENS=tokens:latest'
 images:
   - 'gcr.io/$PROJECT_ID/online-selfbot:$COMMIT_SHA'
 logsBucket: 'gs://online-selfbot-buckets/logs'
